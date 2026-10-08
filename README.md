@@ -96,6 +96,6 @@ GitHub Actions runs these checks for pushes and pull requests to `main`.
 
 Do not commit API tokens, `.env` files, shell history containing secrets, or captured API responses containing sensitive data. Confirm the endpoint and authentication method against the Proton API contract before production use. For production deployments, prefer a secret manager and least-privilege credentials.
 
-## 📄 License
+## License
 
 See [LICENSE](LICENSE).
