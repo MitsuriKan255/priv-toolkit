@@ -1,4 +1,4 @@
-# 🔒 Priv-Toolkit
+# Priv-Toolkit
 
 > A privacy-first Python toolbox for small, security-conscious command-line utilities.
 
@@ -6,11 +6,11 @@
 ![CI](https://img.shields.io/badge/CI-Ruff%20%2B%20Pytest-4c1)
 ![License](https://img.shields.io/badge/license-see%20LICENSE-blue)
 
-## 🎯 Project status
+## Project status
 
 This repository currently contains one implemented utility: a Proton VPN server-list client. Additional Drive, Pass, Lumo, and audit integrations are planned but are not implemented or exposed as commands yet.
 
-## ✨ Principles
+## Principles
 
 - Credentials come from environment variables, never hard-coded files.
 - Tokens are not printed in normal output or error messages.
@@ -18,7 +18,7 @@ This repository currently contains one implemented utility: a Proton VPN server-
 - HTTP failures and invalid JSON return non-zero exit codes.
 - Small modules, explicit behavior, and testable code are preferred.
 
-## 🧰 Current functionality
+## Current functionality
 
 | Path | Purpose |
 | --- | --- |
@@ -27,7 +27,7 @@ This repository currently contains one implemented utility: a Proton VPN server-
 | [`requirements.txt`](requirements.txt) | Runtime dependency constraints. |
 | [`.github/workflows/ci.yml`](.github/workflows/ci.yml) | Ruff and Pytest checks. |
 
-## 🚀 Installation
+## Installation
 
 ### Requirements
 
@@ -53,7 +53,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## ▶️ Usage
+## Usage
 
 Set the token only in the current shell session:
 
@@ -80,7 +80,7 @@ The client calls the Proton VPN server endpoint with bearer authentication and p
 | `2` | Network or HTTP request failed. |
 | `3` | The API returned invalid JSON. |
 
-## 🧪 Development
+## Development
 
 Install the development tools and run the checks:
 
@@ -92,7 +92,7 @@ pytest -q
 
 GitHub Actions runs these checks for pushes and pull requests to `main`.
 
-## 🔐 Security
+## Security
 
 Do not commit API tokens, `.env` files, shell history containing secrets, or captured API responses containing sensitive data. Confirm the endpoint and authentication method against the Proton API contract before production use. For production deployments, prefer a secret manager and least-privilege credentials.
 
